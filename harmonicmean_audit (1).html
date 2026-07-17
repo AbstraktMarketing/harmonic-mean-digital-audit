@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Digital Health and Performance Assessment for Harmonic Mean LLC (harmonicmean.ai + bexbuilds.ai) — dual-domain site audit, keyword analysis, and recommended SEO solution.">
+<meta property="og:title" content="Harmonic Mean LLC — Digital Health &amp; Performance Assessment">
+<meta property="og:description" content="Comprehensive SEO audit, competitor gap analysis, and recommended solution prepared by Abstrakt Marketing Group.">
+<meta property="og:type" content="article">
+<title>Harmonic Mean LLC — Digital Health &amp; Performance Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #13305C;
+  --navy-dark: #0E2245;
+  --navy-light: #294E86;
+  --coral: #FF5A3C;
+  --aqua: #2BD4C4;
+  --off-white: #F6F7FA;
+  --white: #FFFFFF;
+  --charcoal: #1A1A1A;
+  --text: #2D2D2D;
+  --muted: #8A8A8A;
+  --light-gray: #ECEEF3;
+  --border: #E2E4EA;
+  --green: #0B857B;
+  --green-light: #E4F8F6;
+  --red: #D43A1E;
+  --red-light: #FDEEEA;
+  --amber: #D4920A;
+  --amber-light: #FFF8E1;
+  --blue: #294E86;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--off-white);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  overflow: hidden;
+}
+.cover-left {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.cover-left .cover-logo { flex-shrink: 0; }
+.cover-left .cover-content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.5rem 0; }
+.cover-left .cover-footer { flex-shrink: 0; }
+.cover-left::before {
+  content: '';
+  position: absolute;
+  top: -90px; right: -90px;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,90,60,0.42);
+  opacity: 0.5;
+}
+.cover-left .ring-aqua {
+  position: absolute;
+  top: -30px; right: 20px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(43,212,196,0.45);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.platform-tags { display: flex; gap: 0.4rem; margin-top: 0.9rem; flex-wrap: wrap; }
+.platform-tag {
+  font-size: 0.62rem; font-weight: 600; padding: 0.2rem 0.7rem;
+  border-radius: 20px; border: 1px solid rgba(255,90,60,0.42);
+  color: var(--coral); letter-spacing: 0.05em;
+}
+.cover-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+}
+.cover-badge {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem;
+}
+.cover-title {
+  font-size: 3.2rem; font-weight: 800; color: var(--white);
+  line-height: 1.1; margin-bottom: 0; letter-spacing: -0.02em;
+}
+.cover-title span {
+  display: block; font-weight: 300; font-size: 0.95rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-top: 1.25rem; color: rgba(255,255,255,0.5);
+}
+.cover-divider { width: 64px; height: 3px; background: rgba(255,255,255,0.35); margin: 0 0 1rem 0; }
+.cover-client { font-size: 1.2rem; font-weight: 500; color: var(--white); }
+.cover-url { font-size: 0.85rem; color: rgba(255,255,255,0.4); margin-top: 0.2rem; }
+.cover-right {
+  padding: 2.5rem 2.25rem;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: stretch;
+  gap: 1rem; min-width: 0;
+}
+.cover-right > .summary-card { width: 100%; }
+.cover-right .summary-card { padding: 1.25rem 1.5rem; }
+.cover-right .summary-card h3 { margin-bottom: 0.85rem; }
+
+.audit-grid {
+  display: grid; grid-template-columns: auto 1fr auto 1fr;
+  column-gap: 1.25rem; row-gap: 0.55rem;
+  font-size: 0.85rem; align-items: baseline;
+}
+.audit-grid .ag-label { font-weight: 600; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value { font-weight: 800; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value.accent { color: var(--red); }
+.audit-grid .ag-value.warn { color: var(--amber); }
+
+.cover-right .opportunity-list li { font-size: 0.82rem; padding-left: 1.1rem; }
+
+.comp-body { display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; }
+.comp-pie { width: 132px; height: 132px; }
+.comp-pie .pie-label {
+  font-size: 4.2px; font-weight: 800; fill: #fff;
+  text-anchor: middle; dominant-baseline: central; font-family: inherit;
+}
+.comp-legend {
+  display: grid; grid-template-columns: auto auto;
+  column-gap: 1.25rem; row-gap: 0.35rem;
+  font-size: 0.82rem; align-items: center; justify-content: start;
+}
+.comp-legend .cl-name { font-weight: 700; }
+.comp-legend .cl-pct { color: var(--muted); font-weight: 600; }
+
+.summary-card {
+  background: var(--white); border-radius: 12px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.summary-card h3 {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--navy); margin-bottom: 1rem;
+}
+
+.opportunity-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.opportunity-list li {
+  font-size: 0.85rem; color: var(--text);
+  padding-left: 1.2rem; position: relative;
+}
+.opportunity-list li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--navy); font-weight: 700;
+}
+
+section { padding: 4rem 3rem; max-width: 1300px; margin: 0 auto; }
+.section-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 2.5rem; padding-bottom: 1rem;
+  border-bottom: 2px solid var(--navy);
+}
+.section-number {
+  width: 36px; height: 36px; background: var(--navy);
+  color: var(--white); font-weight: 800; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; flex-shrink: 0;
+}
+.section-title { font-size: 1.6rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.01em; }
+
+.card-grid { display: grid; gap: 1rem; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-2-1 { grid-template-columns: 2fr 1fr; }
+.card-grid.cols-1-2 { grid-template-columns: 1fr 2fr; }
+
+.card {
+  background: var(--white); border-radius: 10px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  position: relative; overflow: hidden;
+}
+.card.span-2 { grid-column: span 2; }
+.card.span-3 { grid-column: span 3; }
+.card.span-4 { grid-column: span 4; }
+
+.card-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.card-label .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot.green { background: var(--green); }
+.dot.red { background: var(--red); }
+.dot.amber { background: var(--amber); }
+.dot.blue { background: var(--blue); }
+
+.big-stat { font-size: 2.8rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.big-stat.sm { font-size: 2rem; }
+.big-stat + .stat-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.big-stat.danger { color: var(--red); }
+.big-stat.warning { color: var(--amber); }
+.big-stat.success { color: var(--green); }
+.big-stat.neutral { color: var(--charcoal); }
+
+.badge {
+  display: inline-block; font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 4px; letter-spacing: 0.03em;
+}
+.badge.green { background: var(--green-light); color: var(--green); }
+.badge.red { background: var(--red-light); color: var(--red); }
+.badge.amber { background: var(--amber-light); color: var(--amber); }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table th {
+  background: var(--navy); color: var(--white);
+  font-weight: 600; font-size: 0.7rem; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.6rem 0.75rem; text-align: left;
+}
+table td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text); }
+table tr:nth-child(even) td { background: var(--light-gray); }
+table tr.highlight td { background: #FDEEEA; font-weight: 600; color: var(--navy); }
+
+.issue-item {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  padding: 0.5rem 0; font-size: 0.82rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.issue-item:last-child { border-bottom: none; }
+.issue-icon {
+  width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 800; color: var(--white); margin-top: 1px;
+}
+.issue-icon.error { background: var(--red); }
+.issue-icon.warn { background: var(--amber); }
+
+.header-tree { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 2; }
+.header-tree .tag { font-weight: 600; }
+.header-tree .h1 { color: var(--navy); }
+.header-tree .h2 { color: var(--blue); }
+.header-tree .h4 { color: var(--muted); }
+.header-tree .miss { color: var(--red); font-style: italic; font-weight: 600; }
+.header-tree .indent { padding-left: 1.5rem; }
+.header-tree .page-label {
+  display: block; color: var(--navy); font-weight: 700; margin-top: 0.5rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border);
+}
+.header-tree .page-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.gap-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.gap-hero-card {
+  background: var(--white); border-radius: 12px; padding: 2rem;
+  text-align: center; border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.gap-hero-card .number { font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+.gap-hero-card .label { font-size: 1rem; font-weight: 600; color: var(--charcoal); margin-top: 0.25rem; }
+.gap-hero-card .sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+
+.rank-bar {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.6rem 0.75rem; border-radius: 6px;
+  margin-bottom: 0.4rem; font-size: 0.85rem;
+}
+.rank-bar .name { flex: 1; font-weight: 500; }
+.rank-bar .score { font-weight: 800; font-size: 0.95rem; }
+.rank-bar.winner { background: var(--green-light); }
+.rank-bar.loser { background: var(--red-light); }
+.rank-bar.neutral { background: var(--light-gray); }
+
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.plan-card {
+  background: var(--white); border-radius: 12px;
+  border: 1px solid var(--border); overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.plan-card-header {
+  background: var(--navy); padding: 1rem 1.25rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.plan-card-header .step { font-size: 1.4rem; font-weight: 900; color: rgba(255,255,255,0.4); }
+.plan-card-header .step-title {
+  font-size: 1rem; font-weight: 700; color: var(--white);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.plan-card-body { padding: 1.25rem; }
+.plan-card-body h4 { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 0.75rem; }
+.plan-card-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-card-body li { font-size: 0.8rem; color: var(--text); padding-left: 1rem; position: relative; }
+.plan-card-body li::before { content: '•'; position: absolute; left: 0; color: var(--navy); font-weight: 700; }
+.plan-card-body .callout {
+  font-size: 0.75rem; color: var(--navy); font-style: italic;
+  margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);
+}
+
+.full-divider { height: 4px; background: linear-gradient(90deg, var(--navy), var(--navy-light), var(--navy)); margin: 0; }
+
+.progress-bar { height: 6px; background: var(--light-gray); border-radius: 3px; overflow: hidden; margin-top: 0.5rem; }
+.progress-bar .fill { height: 100%; border-radius: 3px; }
+
+.share-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 0.75rem 0; }
+.share-bar > div {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 700; color: white;
+}
+
+@media (max-width: 900px) {
+  .cover { grid-template-columns: 1fr; }
+  .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-2-1, .card-grid.cols-1-2 { grid-template-columns: 1fr; }
+  .gap-hero, .plan-grid { grid-template-columns: 1fr; }
+  .cover-title { font-size: 2.2rem; }
+  section { padding: 2rem 1.5rem; }
+  .score-layout { grid-template-columns: 1fr !important; }
+  .cover-left::before, .cover-left .ring-aqua { display: none; }
+}
+
+@media print {
+  body { background: white; }
+  .cover { min-height: auto; page-break-after: always; }
+  section { page-break-inside: avoid; padding: 2rem 1rem; }
+  .full-divider { height: 2px; }
+  .card, .gap-hero-card, .plan-card, .summary-card { box-shadow: none; border: 1px solid #ddd; }
+  .share-bar > div { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .progress-bar .fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+.amg-logo {
+  background-image: url("data:image/png;base64,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");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="cover">
+  <div class="cover-left">
+    <div class="ring-aqua"></div>
+    <div class="cover-logo">
+      <div class="amg-logo" style="width:230px;height:29px"></div>
+    </div>
+    <div class="cover-content">
+      <div class="cover-badge">Prepared for Glen Ford &middot; Founder, Harmonic Mean LLC</div>
+      <h1 class="cover-title">
+        Digital Health &amp;<br>Performance<br><span style="display:inline;font-weight:800;font-size:inherit;letter-spacing:inherit;text-transform:none;margin:0;color:var(--coral)">Assessment</span>
+        <span>Gap Analysis &middot; Recommended Solution</span>
+      </h1>
+    </div>
+    <div class="cover-footer">
+      <div class="cover-divider"></div>
+      <div class="cover-client">Harmonic Mean LLC</div>
+      <div class="cover-url">harmonicmean.ai &middot; bexbuilds.ai &middot; Construction AI &middot; Austin, TX</div>
+      <div class="platform-tags">
+        <div class="platform-tag">Google</div>
+        <div class="platform-tag">AI Overviews</div>
+        <div class="platform-tag">ChatGPT</div>
+        <div class="platform-tag">Perplexity</div>
+        <div class="platform-tag">Voice</div>
+      </div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.75rem;letter-spacing:0.04em">July 2026 &middot; Confidential</div>
+    </div>
+  </div>
+  <div class="cover-right">
+
+    
+    <div class="summary-card">
+      <h3>Audit Summary</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem">
+
+        <div style="border-top:3px solid var(--amber);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Domains Audited</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--navy);line-height:1">2</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">harmonicmean.ai + bexbuilds.ai</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Authority Score</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">2</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">both domains; combined</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Org. Keywords</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">0</div>
+          <div style="font-size:0.6rem;color:var(--red);font-weight:700;margin-top:0.1rem">across both domains</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Organic Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">0</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">visits / month combined</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Content Pages</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">1+18</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">no blog on either domain</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">AI Visibility</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">0<span style="font-size:0.7rem;font-weight:600;color:var(--muted)">/100</span></div>
+          <div style="font-size:0.6rem;color:var(--red);font-weight:600;margin-top:0.1rem">BOTH DOMAINS</div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>Biggest Opportunities</h3>
+      <div style="display:flex;flex-direction:column;gap:0.5rem">
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>Two domains, zero organic presence on either.</strong> harmonicmean.ai has 1 real content page. bexbuilds.ai has 18. Neither ranks for a single keyword. Outbound is running now &mdash; and prospects who Google either name find virtually nothing.</div>
+        </div>
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>Split brand authority across two near-empty domains.</strong> harmonicmean.ai: AS 2, 27 backlinks, 7 ref domains. bexbuilds.ai: AS 2, 42 backlinks, 1 ref domain. Combined authority is weaker than any single competitor &mdash; and it&#39;s fractured across two URLs neither buyers nor bots can find.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>302 construction AI gap keywords representing 38,070 monthly searches.</strong> "AI in construction" alone drives 2,400/mo. ALICE Technologies, Pelles AI, and Digital Project Manager rank for all of them. Harmonic Mean and Bex rank for none.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>harmonicmean.ai has no sitemap, no llms.txt, and www.harmonicmean.ai returns 404.</strong> The company&#39;s brand domain is functionally broken for both search crawlers and AI engines.</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>Construction AI Search Market Position</h3>
+      <div style="display:flex;align-items:baseline;gap:0.75rem;margin-bottom:0.65rem">
+        <div style="font-size:2.8rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-0.03em">0%</div>
+        <div style="font-size:0.78rem;color:var(--text);line-height:1.4">across both<br>domains</div>
+      </div>
+      <div style="height:18px;border-radius:4px;overflow:hidden;display:flex;margin-bottom:0.6rem">
+        <div style="width:45%;background:var(--charcoal);display:flex;align-items:center;padding-left:0.4rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">ALICE 45%</span></div>
+        <div style="width:30%;background:var(--navy);display:flex;align-items:center;padding-left:0.3rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">Pelles 30%</span></div>
+        <div style="width:25%;background:var(--muted)"></div>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:0.75rem">Harmonic Mean captures <strong style="color:var(--text)">none</strong> of 38,070 monthly construction AI searches. Prospects Googling to vet the outbound call find near-empty sites.</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.76rem">
+        <div><span style="color:var(--muted)">Bex / HM traffic:</span> <strong style="color:var(--red)">0/mo</strong></div>
+        <div><span style="color:var(--muted)">ALICE traffic:</span> <strong style="color:var(--text)">Est. 3K+/mo</strong></div>
+        <div><span style="color:var(--muted)">Combined ref. domains:</span> <strong style="color:var(--red)">8</strong></div>
+        <div><span style="color:var(--muted)">ALICE ref. domains:</span> <strong style="color:var(--text)">480+</strong></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+
+<div style="background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 100%);border-top:3px solid var(--coral);padding:0 3rem">
+  <div style="max-width:1300px;margin:0 auto;display:flex;align-items:stretch">
+
+    
+    <div style="display:flex;align-items:center;padding:1.6rem 2.5rem 1.6rem 0;border-right:1px solid rgba(255,255,255,0.08);flex-shrink:0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.9 63.9" style="width:170px;height:32px;display:block">
+        <defs><style>.ib-cls-1{fill:none}.ib-cls-2{fill:#fff}.ib-cls-3{fill:#FF5A3C}</style></defs>
+        <g>
+          <g>
+            <g>
+              <path class="ib-cls-3" d="M247,39.4c-5.6,0-11.3-2-15.7-5.9l4.8-5.8c3.3,2.8,6.8,4.5,11.1,4.5,3.3,0,5.3-1.3,5.3-3.5v-.1c0-2.1-1.3-3.1-7.4-4.7-7.4-1.9-12.3-4-12.3-11.3v-.1c0-6.7,5.4-11.1,12.9-11.1,5.4,0,10,1.7,13.7,4.7l-4.2,6.1c-3.3-2.3-6.5-3.6-9.6-3.6s-4.8,1.4-4.8,3.2v.1c0,2.4,1.6,3.2,8,4.9,7.5,2,11.7,4.6,11.7,11.1v.1c.1,7.3-5.5,11.4-13.5,11.4z"/>
+              <path class="ib-cls-3" d="M279.1,38.9h-14.4V1.9h14.4c11.6,0,19.7,8,19.7,18.4v.1c0,10.4-8.1,18.5-19.7,18.5zM290.3,20.4c0-6.6-4.5-11.1-11.1-11.1h-6.3v22.3h6.3c6.6,0,11.1-4.5,11.1-11.2z"/>
+              <path class="ib-cls-3" d="M325.3,38.9l-7.9-11.8h-6.4v11.8h-8.1V1.9h16.9c8.7,0,14,4.6,14,12.2v.1c0,6-3.2,9.7-7.9,11.5l9,13.2h-9.6zM325.5,14.5c0-3.5-2.4-5.3-6.4-5.3h-8.1v10.6h8.2c4,0,6.2-2.1,6.2-5.2v-.1z"/>
+            </g>
+            <g>
+              <path class="ib-cls-2" d="M0,50h4.4c4.3,0,7.3,3,7.3,6.8h0c0,3.8-3,6.8-7.2,6.8H0v-13.6zM4.5,63c3.9,0,6.6-2.7,6.6-6.2h0c0-3.5-2.6-6.2-6.6-6.2H.7v12.4h3.8z"/>
+              <path class="ib-cls-2" d="M16.6,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M22.2,56.8h0c0-3.7,2.6-7.1,6.7-7.1,2.1,0,3.5.6,4.8,1.8l-.3.5c-1.2-1-2.4-1.7-4.4-1.7-3.6,0-6,3.1-6,6.4h0c0,3.5,2.3,6.5,6.1,6.5,1.9,0,3.6-.8,4.7-1.8v-4.2h-4.9v-.6h5.5v5.1c-1.3,1.2-3.1,2.1-5.3,2.1-4.4.1-6.9-3.1-6.9-7z"/>
+              <path class="ib-cls-2" d="M39.5,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M49.3,50.6h-4.8v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M62.4,49.9h.6l6.5,13.7h-.7l-1.8-4h-8.4l-1.9,4h-.7l6.4-13.7zM66.6,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M73.6,50h.7v13h8.2v.6h-8.9v-13.6z"/>
+              <path class="ib-cls-2" d="M92.7,61.6l.4-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.8-3.5,4.4-3.5,1.9,0,3.3.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-1.9-.1-3.7-.8-5.3-2.3z"/>
+              <path class="ib-cls-2" d="M107.4,50h9.6v.6h-8.9v5.9h8.1v.6h-8.1v6h9v.6h-9.7v-13.7z"/>
+              <path class="ib-cls-2" d="M127,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM131.2,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M138.2,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM143.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M152.9,56.8h0c0-3.9,2.9-7.1,6.7-7.1,2.5,0,3.9.9,5.2,2.2l-.5.5c-1.1-1.1-2.5-2-4.8-2-3.5,0-6,2.9-6,6.4h0c0,3.5,2.6,6.4,6.1,6.4,2.1,0,3.6-.9,4.9-2.2l.5.5c-1.3,1.3-2.9,2.3-5.4,2.3-3.8.1-6.7-3.1-6.7-7z"/>
+              <path class="ib-cls-2" d="M169.1,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.3v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M195.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M205.4,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.4v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M226.6,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM230.9,59l-3.9-8.4-4,8.4h7.9z"/>
+              <path class="ib-cls-2" d="M239.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M255.2,50h.7l4.3,12.7,4.1-12.7h.5l4.1,12.8,4.3-12.7h.7l-4.7,13.7h-.5l-4.1-12.5-4.1,12.5h-.5l-4.8-13.8z"/>
+              <path class="ib-cls-2" d="M276.8,56.8h0c0-3.8,2.7-7.1,6.8-7.1s6.8,3.3,6.8,7h0c0,3.7-2.7,7-6.8,7s-6.8-3.1-6.8-6.9zM289.8,56.9h0c0-3.5-2.5-6.5-6.1-6.5s-6.1,3-6.1,6.4h0c0,3.5,2.5,6.5,6.2,6.5s6-3,6-6.4z"/>
+              <path class="ib-cls-2" d="M295.3,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM300.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M310.7,50h.7v9.1l9.1-9.1h.9l-5.9,5.9,6.2,7.8h-.9l-5.8-7.3-3.6,3.6v3.7h-.7v-13.7z"/>
+              <path class="ib-cls-2" d="M324.8,61.6l.5-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.9-3.5,4.4-3.5,1.9,0,3.4.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-2.1-.1-3.8-.8-5.4-2.3z"/>
+            </g>
+            <path class="ib-cls-2" d="M147.9,24.5c0,8.9-4.8,13.4-12.2,13.4s-12.5-5-12.5-13.7V3h-2.7v21.5c0,10.3,6.3,15.9,15.1,15.9s15.1-5.6,15.1-16.2V3h-2.7l-.1,21.5z"/>
+            <polygon class="ib-cls-2" points="184.1 35 158.7 3 156.2 3 156.2 39.8 158.8 39.8 158.8 7.1 184.7 39.8 186.8 39.8 186.8 3 184.1 3 184.1 35"/>
+            <path class="ib-cls-2" d="M204.5,3h-12.2v36.8h12.2c11.6,0,19.6-8,19.6-18.4v-.1c0-10.3-8-18.3-19.6-18.3zM221.2,21.5c0,8.8-6.5,15.8-16.7,15.8h-9.5V5.5h9.5c10.2,0,16.7,7.2,16.7,15.9v.1z"/>
+            <path class="ib-cls-2" d="M65.6,20.9c3-1.2,6.3-3.7,6.3-8.7v-.1c0-5.5-4.8-9-11.9-9h-15.3v36.8h16c7.9,0,13.2-3.9,13.2-10v-.1c0-5.2-3.9-7.8-8.3-8.9zM47.4,5.5h12.4c5.9,0,9.2,2.7,9.2,6.8v.1c0,4.9-3.9,7.6-9.5,7.6h-12.1V5.5zM71.1,29.8c0,4.6-4,7.5-10.3,7.5h-13.4v-14.8h12.5c7.2,0,11.2,2.6,11.2,7.1v.2z"/>
+            <rect class="ib-cls-2" x="0" y="3" width="2.7" height="36.8"/>
+            <polygon class="ib-cls-2" points="36.4 35 11 3 8.4 3 8.4 39.8 11 39.8 11 7.1 37 39.8 39 39.8 39 3 36.4 3 36.4 35"/>
+            <g>
+              <path class="ib-cls-2" d="M96.4,0c-11.6,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9c1.5,0,3-.2,4.4-.5-.1-.1-.1-.2-.2-.3l-.9-2.8c-.7.7-1.5,1.1-2.3,1.3v-8.8l-.6-1.9-.8-2.7-.7-2.3v4.5c-2.4,0-4.8.2-7,.6-.5-2.1-.8-4.5-.9-6.9h7.3l-.2-.6c-.2-.5-.1-1,.1-1.5h-7.2c.1-2.5.4-4.8.9-6.9,2.2.3,4.6.5,7,.6v5.4c.4-.3.8-.4,1.2-.4.3,0,.6.1.9.2v-5.4c2.4,0,4.8-.2,7-.6.5,2.1.8,4.5.9,6.9h-6.2l1.4.9,2.1,1.3h2.7c0,.5,0,1-.1,1.5l.6.4,1.4.9c.1-.9.2-1.8.2-2.8h7.6c-.1,2.3-.7,4.5-1.6,6.5l.1.1,1.6,1s.1,0,.1.1c1.2-2.6,1.9-5.6,1.9-8.7.1-11.6-9.2-20.9-20.7-20.9zM80.5,10.9c1.6.7,3.5,1.2,5.6,1.6-.5,2.2-.8,4.7-.9,7.3h-7.6c.2-3.3,1.3-6.3,2.9-8.9zM80.5,30.9c-1.7-2.6-2.7-5.7-2.9-9h7.6c.1,2.6.4,5.1.9,7.3-2.1.5-4,1.1-5.6,1.7zM95.3,30.5v9c-2.7-.7-5-3.9-6.4-8.5,2-.3,4.2-.5,6.4-.5zM90.4,38.7c-3.4-1.1-6.4-3.2-8.6-6,1.4-.5,3.1-1,4.8-1.4,1,3,2.3,5.6,3.8,7.4zM86.7,10.4c-1.8-.4-3.4-.8-4.8-1.4,2.2-2.7,5.2-4.8,8.6-6-1.6,1.9-2.9,4.4-3.8,7.4zM95.3,11.3c-2.2,0-4.4-.2-6.4-.5,1.4-4.6,3.8-7.8,6.4-8.5v9zM97.4,11.3V2.3c2.7.7,5,3.9,6.4,8.5-2,.3-4.2.4-6.4.5zM102.3,3.1c3.4,1.1,6.4,3.2,8.6,6-1.4.5-3,1-4.8,1.4-1-3.1-2.3-5.6-3.8-7.4zM107.5,19.8c-.1-2.6-.4-5.1-.9-7.3,2.1-.4,4-1,5.6-1.6,1.7,2.6,2.7,5.7,2.9,8.9h-7.6z"/>
+              <path class="ib-cls-3" d="M114.4,30.8l-1.6-1-5.7-3.4-2-1.2-5.3-3.2-2.9-1.8c-.1-.1-.2-.1-.3-.1-.4,0-.7.4-.6.8l1.5,4.8.8,2.7.7,2.2,2,6.4,1.1,3.6c.1.2.2.3.4.4h.2c.2,0,.3-.1.4-.2l.1-.1,2.1-4,2.4,3c.1.2.3.2.5.2.1,0,.3,0,.4-.1l3.3-2.7c.3-.2.3-.6.1-.9l-2.4-3,4.3-1.1h.1l.2-.1c.4-.1.6-.6.3-.9c0-.2,0-.3-.1-.3z"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    
+    <div style="flex:1;display:flex;align-items:stretch">
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">2,000+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Active Clients</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">$1B+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Revenue Generated</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem;background:rgba(255,90,60,0.12)">
+        <div style="width:24px;height:2px;background:var(--aqua);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">3.55x</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Avg. Client ROI</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">200+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Industry Awards</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">Inc. 5000</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">10&times; Honoree</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--coral);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">100K+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Appointments / Year</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number" style="background:var(--navy-dark)">&#9733;</div>
+    <h2 class="section-title">Digital Health Score</h2>
+  </div>
+
+  <div class="score-layout" style="display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start">
+    <div class="card" style="text-align:center;padding:2rem">
+      <div style="position:relative;width:180px;height:180px;margin:0 auto 1rem">
+        
+        <!-- HEALTH_COLOR_HEX rule: <40 #D43A1E (coral) / 40-69 #D4920A (amber) / 70+ #0B857B (aqua-deep) -->
+        <svg viewBox="0 0 120 120" style="transform:rotate(-90deg)">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#E2E4EA" stroke-width="10"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#D43A1E" stroke-width="10"
+                  stroke-dasharray="327" stroke-dashoffset="235" stroke-linecap="round"/>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <div style="font-size:3rem;font-weight:900;color:var(--red);line-height:1">28</div>
+          <div style="font-size:0.75rem;color:var(--muted);font-weight:600">out of 100</div>
+        </div>
+      </div>
+      <div style="font-size:1.1rem;font-weight:800;color:var(--red)">CRITICAL &mdash; TWO-DOMAIN RISK</div>
+      
+      <p style="font-size:0.88rem;color:var(--text);line-height:1.6;margin-top:0.5rem">Two Bootstrap static sites, one real content page between them, and zero organic presence on either. Outbound is active &mdash; but the digital infrastructure to validate those conversations doesn&#39;t exist yet.</p>
+      
+    </div>
+
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem">
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Health</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Short title tag; non-descriptive anchor text; 3.31MB page weight</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">72<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:72%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Speed</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">GTmetrix PageSpeed 87% &middot; 2.2s load &middot; TTFB 45ms</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">80<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:80%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Keyword Visibility</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">0 organic rankings; 1,751 gap keywords across 4 competitors</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">5<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:5%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Content Strategy</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">6 product pages; no blog, no resources, no comparison content</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">10<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:10%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Local SEO</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Poor overall presence; 0 reviews; 33 of 37 listings to fix</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">15<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:15%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Competitive Position</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">0% of construction AI cluster traffic; ALICE leads</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">5<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:5%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Security &amp; Technical</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">harmonicmean.ai: www 404, no sitemap, 3 broken pages; bexbuilds.ai: clean HTTPS</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">55<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:55%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">AI Search Readiness</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">harmonicmean.ai: no llms.txt (404); bexbuilds.ai: llms.txt exists but 0 citations on both</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">8<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:8%;background:var(--red)"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;gap:2rem;margin-top:1.5rem;justify-content:center">
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--green)"></div> 70&ndash;100 Strong
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--amber)"></div> 40&ndash;69 Needs Work
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--red)"></div> 0&ndash;39 Critical
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <h2 class="section-title">Website Performance &mdash; Two Domains</h2>
+  </div>
+
+  <div style="background:var(--navy);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
+    <div>
+      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:0.35rem">Company Brand</div>
+      <div style="font-size:1.1rem;font-weight:800;color:#fff">harmonicmean.ai</div>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:0.2rem">1 real content page &middot; Bootstrap 5 &middot; Cloudflare CDN</div>
+    </div>
+    <div>
+      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:0.35rem">Product Brand</div>
+      <div style="font-size:1.1rem;font-weight:800;color:#fff">bexbuilds.ai</div>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:0.2rem">18 pages &middot; Bootstrap 5 &middot; Fastly CDN &middot; 6 product pages</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.65rem"><span class="dot red"></span> harmonicmean.ai &mdash; Critical Issues</div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>www.harmonicmean.ai returns 404</strong> &mdash; the most common way users type a URL; broken for buyers and search crawlers alike</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>sitemap.xml returns 404</strong> &mdash; Googlebot has no crawl guidance; the only content page risks being missed or deprioritized</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>llms.txt returns 404</strong> &mdash; AI engines have no structured guidance; ChatGPT, Perplexity, and AI Overviews can&#39;t index or cite Harmonic Mean</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>3 broken (4xx) internal pages</strong> and 2 broken internal links from the homepage</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>1 real content page</strong> (homepage) &mdash; title reads "Home, Featuring Bex | harmonicmean.ai" &mdash; no keyword targeting, no product language in H1</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>No schema markup</strong> on any harmonicmean.ai page; no OG tags beyond homepage; no canonical set</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Unminified JS &amp; CSS on 4 pages</strong>; 16 pages with links with no anchor text flagged by AI Search audit</div></div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.65rem"><span class="dot amber"></span> bexbuilds.ai &mdash; Issues</div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>No blog, no resource center</strong> &mdash; 18 pages of product copy with zero content surface to capture buyer-intent searches</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>No schema markup</strong> &mdash; SoftwareApplication and FAQ schema absent across all 6 product pages</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Title "Bex | Home"</strong> &mdash; no keyword in the most important on-page SEO signal</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>3.31MB page weight</strong> with 38 JS requests &mdash; 2.1MB images/video; mobile risk for field crews</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>Duplicate trailing-slash URLs</strong> (/products/punch and /products/punch/ both crawlable; no canonical)</div></div>
+      <div class="issue-item"><div class="issue-icon info">i</div><div><strong>llms.txt present</strong> on bexbuilds.ai &mdash; good; but 0 AI citations on either domain despite the file</div></div>
+      <div class="issue-item"><div class="issue-icon info">i</div><div><strong>GTmetrix B (87% PageSpeed, 2.2s load, 45ms TTFB)</strong> &mdash; the technical foundation is solid; the content layer is what&#39;s missing</div></div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.65rem"><span class="dot red"></span> Dual-Domain Comparison</div>
+      <table>
+        <thead><tr><th>Signal</th><th>harmonicmean.ai</th><th>bexbuilds.ai</th></tr></thead>
+        <tbody>
+          <tr><td>Real content pages</td><td style="color:var(--red);font-weight:700">1</td><td style="color:var(--amber)">18</td></tr>
+          <tr><td>Crawled pages (Semrush)</td><td style="color:var(--red)">8</td><td style="color:var(--amber)">18</td></tr>
+          <tr><td>www redirect working</td><td style="color:var(--red);font-weight:700">No (404)</td><td style="color:var(--green)">Yes</td></tr>
+          <tr><td>sitemap.xml</td><td style="color:var(--red);font-weight:700">404</td><td style="color:var(--green)">Present</td></tr>
+          <tr><td>llms.txt</td><td style="color:var(--red);font-weight:700">404</td><td style="color:var(--amber)">Present, 0 citations</td></tr>
+          <tr><td>Schema markup</td><td style="color:var(--red)">None</td><td style="color:var(--red)">None</td></tr>
+          <tr><td>HTTPS / HSTS</td><td style="color:var(--green)">Active</td><td style="color:var(--green)">Active</td></tr>
+          <tr><td>Authority Score</td><td style="color:var(--red)">2</td><td style="color:var(--red)">2</td></tr>
+          <tr><td>Referring domains</td><td style="color:var(--amber)">7</td><td style="color:var(--red)">1</td></tr>
+          <tr><td>Organic keywords</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red);font-weight:700">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem"><strong style="color:var(--red)">The two-domain problem:</strong> Harmonic Mean LLC runs its company identity (harmonicmean.ai) and its product identity (bexbuilds.ai) as two separate static sites, built on the same Bootstrap 5 stack, with identical organic presence: zero. The company domain is functionally broken for discovery &mdash; its www subdomain 404s, its sitemap doesn&#39;t exist, and its llms.txt returns a 404. The product domain has more pages but no content infrastructure.</p>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">Outbound is already running. Every prospect who takes a call from Douglas Yocco or receives a Bex email will Google "Harmonic Mean" or "Bex builds" to vet the company before agreeing to a meeting. What they find today: near-empty sites with no proof of market presence, no third-party content, and no reviews. This erodes trust before the demo begins.</p>
+      <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:8px;padding:0.75rem 1rem;font-size:0.8rem">
+        <strong style="color:var(--amber)">The fix:</strong> Consolidate onto one scalable domain, rebuild with a CMS, and build the content and authority footprint that makes Harmonic Mean and Bex look as credible online as they are in product.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <h2 class="section-title">Keywords &amp; Traffic</h2>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Total Organic Keywords</div>
+      <div class="big-stat danger">0</div>
+      <div class="stat-sub">No organic rankings in Semrush US database</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Organic Traffic</div>
+      <div class="big-stat danger">0<span style="font-size:1.2rem">/mo</span></div>
+      <div class="stat-sub">Zero organic visitors; no search-driven inbound traffic</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Authority Score</div>
+      <div class="big-stat danger">2</div>
+      <div class="stat-sub">42 backlinks &middot; 1 referring domain &middot; AS 2/100</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> Organic Keyword Footprint</div>
+      <div style="padding:1.5rem;text-align:center;background:var(--red-light);border-radius:8px;margin-bottom:1rem">
+        <div style="font-size:3rem;font-weight:900;color:var(--red);line-height:1">0</div>
+        <div style="font-size:0.85rem;color:var(--text);margin-top:0.5rem">organic keywords ranking in the US</div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text);line-height:1.6">Semrush returns no ranking data for bexbuilds.ai. The domain has no organic presence in any position tracking category. Competitors ranking for the same product categories generate thousands of monthly visits from organic; Bex generates zero. The entire traffic picture is direct, referral, or paid &mdash; none of it is earned search traffic from buyers researching the problems Bex solves.</p>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Traffic &amp; Authority Gap vs. Competitors</div>
+      <div style="margin-bottom:1rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Gap Keywords by Intent (1,751 total)</div>
+        <table>
+          <thead><tr><th>Intent</th><th>Keywords</th><th>Top Opportunity</th></tr></thead>
+          <tbody>
+            <tr style="background:var(--red-light)"><td style="font-weight:700;color:var(--red)">Informational</td><td>1,443</td><td>certificate of insurance</td></tr>
+            <tr><td style="font-weight:600;color:var(--amber)">Commercial</td><td>248</td><td>plangrid, AI construction software</td></tr>
+            <tr><td>Transactional</td><td>60</td><td>subcontractor insurance</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem">
+        <div style="background:var(--light-gray);padding:0.5rem 0.75rem;border-radius:6px"><span style="color:var(--muted)">Bex Authority Score:</span><br><strong style="color:var(--red)">2</strong></div>
+        <div style="background:var(--light-gray);padding:0.5rem 0.75rem;border-radius:6px"><span style="color:var(--muted)">Illumend Authority Score:</span><br><strong style="color:var(--text)">21</strong></div>
+        <div style="background:var(--light-gray);padding:0.5rem 0.75rem;border-radius:6px"><span style="color:var(--muted)">Bex Ref. Domains:</span><br><strong style="color:var(--red)">1</strong></div>
+        <div style="background:var(--light-gray);padding:0.5rem 0.75rem;border-radius:6px"><span style="color:var(--muted)">Constructable Ref. Domains:</span><br><strong style="color:var(--text)">480</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <h2 class="section-title">Competitor Keyword Gap &mdash; Construction AI</h2>
+  </div>
+
+  <div class="gap-hero">
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">302</div>
+      <div class="label">Construction AI Keywords<br>Neither Domain Ranks For</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--amber)">38,070</div>
+      <div class="label">Monthly Searches in<br>Harmonic Mean&#39;s Market</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">0%</div>
+      <div class="label">Harmonic Mean &amp; Bex<br>Share of This Traffic</div>
+    </div>
+  </div>
+
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px;margin-bottom:1.25rem">These keywords represent buyers actively researching construction AI, automation tools, and workflow software &mdash; the exact problems Bex solves. None of the competitors below are enterprise incumbents; they&#39;re content-forward startups and publications that built keyword footprints early.</p>
+
+  <div class="card span-4">
+    <table>
+      <thead><tr><th>Domain / Source</th><th>Keyword Focus</th><th>Top Keyword</th><th>Est. Traffic/mo</th><th>Ref. Domains</th></tr></thead>
+      <tbody>
+        <tr class="highlight">
+          <td><strong>Harmonic Mean + Bex</strong></td><td style="color:var(--red)">Construction AI automation</td><td style="color:var(--red)">None ranking</td><td style="color:var(--red);font-weight:700">0</td><td style="color:var(--red)">1&ndash;7</td>
+        </tr>
+        <tr><td>alicetechnologies.com</td><td>Construction AI scheduling</td><td>"alice ai" #3 (1,300/mo)</td><td>Est. 3,500+</td><td>480+</td></tr>
+        <tr><td>thedigitalprojectmanager.com</td><td>Construction AI tools guides</td><td>"ai in construction" #7 (2,400/mo)</td><td>Est. 2,800+</td><td>2,100+</td></tr>
+        <tr><td>pelles.ai</td><td>Generative AI in construction</td><td>"ai construction tools" #4 (480/mo)</td><td>Est. 800+</td><td>120+</td></tr>
+        <tr><td>bakerdonelson.com</td><td>Construction AI risk/legal</td><td>"ai and construction" #9 (480/mo)</td><td>Est. 600+</td><td>3,400+</td></tr>
+      </tbody>
+    </table>
+    <div class="share-bar" style="margin-top:1rem">
+      <div style="width:45%;background:var(--charcoal);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">ALICE Technologies 45%</span></div>
+      <div style="width:30%;background:var(--navy);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">Digital PM 30%</span></div>
+      <div style="width:20%;background:var(--muted);display:flex;align-items:center;justify-content:center"><span style="font-size:0.6rem;font-weight:700;color:#fff">Pelles + Others</span></div>
+      <div style="width:5%;background:var(--red)"></div>
+    </div>
+  </div>
+
+  <div style="break-before:page;page-break-before:always;padding-top:1.5rem">
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> What This Means for Harmonic Mean</div>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">The 302 gap keywords aren&#39;t dominated by software giants &mdash; they&#39;re owned by content-first players: ALICE Technologies (a construction AI scheduling tool), Pelles.ai (a generative AI startup), and editorial sites like Digital Project Manager. None of them offer Bex&#39;s specific depth in punch lists, lien management, COI compliance, or email-native workflow automation. The content gap is winnable &mdash; but only once Harmonic Mean has a domain with the infrastructure to publish and compete.</p>
+      <div style="background:var(--navy);border-radius:8px;padding:1rem 1.25rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.5rem">Pipeline Impact &mdash; The Revenue Math</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.85);line-height:1.65">Harmonic Mean&#39;s target is 10x customers in the next year. At a $60K average deal, that means closing roughly 9 net-new accounts on top of the current 1. Outbound can drive some of that &mdash; but each appointment Abstrakt sets is easier to close when the prospect has already found credible content about Bex online. Capturing even <strong style="color:rgba(255,200,100,1)">5% of the 38,070 monthly construction AI searches</strong> (~1,900 visits/mo) and converting at 2% produces <strong style="color:rgba(255,200,100,1)">38 qualified conversations per month</strong> from inbound alone &mdash; compounding the outbound pipeline rather than replacing it.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Keyword Landscape by Competitor</div>
+      <div class="rank-bar winner"><span class="name"><strong>ALICE Technologies</strong></span><span class="score" style="color:var(--green)">Est. 3,500+/mo &middot; Construction AI scheduling</span></div>
+      <div class="rank-bar winner"><span class="name">Digital Project Manager</span><span class="score" style="color:var(--green)">Est. 2,800+/mo &middot; "AI in construction" guides</span></div>
+      <div class="rank-bar neutral"><span class="name">Pelles AI</span><span class="score" style="color:var(--text)">Est. 800+/mo &middot; Generative AI use cases</span></div>
+      <div class="rank-bar neutral"><span class="name">Baker Donelson (legal blog)</span><span class="score" style="color:var(--text)">Est. 600+/mo &middot; AI risk in construction</span></div>
+      <div class="rank-bar loser"><span class="name"><strong>Harmonic Mean / Bex</strong></span><span class="score" style="color:var(--red)">0/mo &middot; 0 rankings &middot; across both domains</span></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <h2 class="section-title">Top Keyword Opportunities</h2>
+  </div>
+
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">These keywords represent buyer-adjacent searches Harmonic Mean can realistically own with targeted content pages &mdash; aligned directly to Bex&#39;s product modules and construction tech audience.</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>CPC</th><th>KD</th><th>Leader</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>ai in construction</td><td>2,400</td><td>$5.86</td><td>67</td><td>Digital PM #7</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>ai for construction</td><td>1,000</td><td>$6.36</td><td>55</td><td>Digital PM #1</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>construction ai</td><td>720</td><td>$5.86</td><td>66</td><td>Digital PM #5</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>artificial intelligence in construction</td><td>590</td><td>$6.36</td><td>50</td><td>Digital PM #48</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>ai construction software</td><td>480</td><td>$7.19</td><td>57</td><td>Digital PM #1</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>ai construction tools</td><td>480</td><td>$9.30</td><td>52</td><td>Pelles #4</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>construction technology platform</td><td>390</td><td>$0.00</td><td>44</td><td>Not dominated</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>ai in construction industry</td><td>320</td><td>$5.63</td><td>58</td><td>Baker Donelson</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>construction ai tools</td><td>210</td><td>$9.14</td><td>54</td><td>Pelles #6</td><td><span class="badge green">Medium</span></td></tr>
+          <tr><td>project management tools for construction</td><td>210</td><td>$27.45</td><td>33</td><td>Not dominated</td><td><span class="badge green">Medium</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Page-to-Keyword Map &mdash; Recommended Content</div>
+      <table>
+        <thead><tr><th>Page</th><th>Target Keywords</th><th>Monthly Volume</th></tr></thead>
+        <tbody>
+          <tr><td>AI in Construction Hub</td><td>ai in construction, ai for construction, construction ai</td><td>4,120/mo</td></tr>
+          <tr><td>PlanGrid Alternative Page</td><td>plangrid alternative, punch list software, construction app</td><td>22,200/mo</td></tr>
+          <tr><td>Construction AI Software Guide</td><td>ai construction software, ai construction tools, best construction AI</td><td>1,170/mo</td></tr>
+          <tr><td>Construction Automation Overview</td><td>construction technology platform, construction automation</td><td>780/mo</td></tr>
+          <tr><td>Bex Punch: Punch List Automation</td><td>punch list software, punch list app, procore punch list</td><td>Est. 1,500/mo</td></tr>
+          <tr><td>Bex Walks: Safety Walk Software</td><td>safety walk software, OSHA site walk, construction safety app</td><td>Est. 900/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <h2 class="section-title">SEO Content</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Site Structure &mdash; Header Tree</div>
+      <div class="header-tree">
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Bex | Home</span></div>
+        <div class="indent miss">&#9888; Title is "Bex | Home" &mdash; no keyword. Should target "AI construction management software" or similar</div>
+        <div class="indent miss">&#9888; Meta description is generic brand positioning, not keyword-targeted</div>
+        <br>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">[Product pages: Bex Punch, Bex Walks, Bex Liens, Bex Insurance, Bex Risk, Bex Core]</span></div>
+        <div class="indent">Each product has its own page &mdash; strong product segmentation</div>
+        <div class="indent miss">&#9888; No commercial comparison structure (vs. alternatives, pricing pages, buyer guides)</div>
+        <div class="indent miss">&#9888; No integration pages, no industry-vertical pages (GCs, subs, developers)</div>
+        <br>
+        <div><span class="tag">Blog</span> <span style="color:var(--red);font-weight:700">Not present</span></div>
+        <div class="indent miss">&#9888; No blog, no resource hub, no downloadable content &mdash; zero organic content surface</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> Product &amp; Content Page Inventory</div>
+      <table>
+        <thead><tr><th>Page / Section</th><th>Status</th><th>Gap</th></tr></thead>
+        <tbody>
+          <tr><td>Bex Punch (punch lists)</td><td><span class="badge green">Exists</span></td><td>No keyword targeting; no comparison page</td></tr>
+          <tr><td>Bex Walks (safety walks)</td><td><span class="badge green">Exists</span></td><td>No OSHA keyword content; no field guide</td></tr>
+          <tr><td>Bex Liens (lien management)</td><td><span class="badge green">Exists</span></td><td>No lien waiver software comparison content</td></tr>
+          <tr><td>Bex Insurance (COI tracking)</td><td><span class="badge green">Exists</span></td><td>No COI content; competitors own COI search traffic</td></tr>
+          <tr><td>Bex Risk (bid risk)</td><td><span class="badge green">Exists</span></td><td>No risk qualification keyword coverage</td></tr>
+          <tr><td>Bex Core (AI engine)</td><td><span class="badge green">Exists</span></td><td>No AI construction software content</td></tr>
+          <tr><td>COI / Insurance Knowledge Hub</td><td><span class="badge red">Missing</span></td><td>2,400/mo on "ai in construction"; not dominated</td></tr>
+          <tr><td>Construction Software Comparisons</td><td><span class="badge red">Missing</span></td><td>Plangrid alternative &mdash; 22,200/mo; not dominated</td></tr>
+          <tr><td>Lien Waiver / Submittal Guides</td><td><span class="badge red">Missing</span></td><td>"submittals" = 9,900/mo; constructable #13</td></tr>
+          <tr><td>Blog / Resource Center</td><td><span class="badge red">Missing</span></td><td>Zero content surface for informational traffic</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem"><strong style="color:var(--red)">Critical gap:</strong> Bex has six strong, purpose-built AI modules covering everything from punch lists to insurance compliance &mdash; and not a single piece of content to explain, educate, or attract a buyer researching those problems. Illumend has built an entire COI and insurance knowledge hub that ranks for 40,500+ monthly searches. Constructable ranks for submittal and construction software keywords. Bex&#39;s Bex Insurance product solves exactly what competitors' content addresses &mdash; but there&#39;s no content infrastructure to intercept those buyers. A systematic content program tied to each product&#39;s buyer intent is the immediate unlock.</p>
+      <div style="margin-top:0.75rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Top Missing Content Priorities</div>
+        <ul style="font-size:0.82rem;color:var(--text);line-height:1.8;padding-left:1.25rem">
+          <li><strong>COI &amp; Certificate of Insurance Guide</strong> &mdash; 40,500/mo "coi"; 18,100/mo "certificate of insurance" &mdash; Bex Insurance owns this use case</li>
+          <li><strong>PlanGrid Alternative Page</strong> &mdash; 22,200/mo "plangrid"; buyers actively comparing options; Bex Punch competes directly</li>
+          <li><strong>Construction Punch List Software Guide</strong> &mdash; commercial intent; no competitor dominates yet; Bex Punch fit</li>
+          <li><strong>Submittal Management Software Page</strong> &mdash; 9,900/mo; Bex Core addresses this workflow</li>
+          <li><strong>Lien Waiver Software Comparison</strong> &mdash; Bex Liens product; buyers researching alternatives to manual processes</li>
+          <li><strong>Construction AI Overview Hub</strong> &mdash; Bex Core + Bex Risk; broad AI construction queries with no dominant owner</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.5rem"><span class="dot red"></span> Blog &amp; Publishing Status</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:1rem;font-size:0.8rem">
+        <div style="background:var(--red-light);padding:0.6rem 0.75rem;border-radius:6px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:var(--red)">0</div>
+          <div style="color:var(--muted)">Blog posts published</div>
+        </div>
+        <div style="background:var(--red-light);padding:0.6rem 0.75rem;border-radius:6px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:var(--red)">0</div>
+          <div style="color:var(--muted)">Resource / guide pages</div>
+        </div>
+      </div>
+      <div style="background:var(--light-gray);padding:0.75rem 1rem;border-radius:8px;font-size:0.8rem;color:var(--text);line-height:1.6">
+        <strong>What competitors publish:</strong> An active COI and construction insurance knowledge hub with 2,500+ ranking pages covering "what is COI," "certificate of liability insurance," "ACORD forms," "indemnity insurance," and dozens of related terms. This is a content moat built over months. Bex Insurance can compete &mdash; but only with a content program to back it.
+      </div>
+      <div style="margin-top:0.75rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem">Content publishing velocity vs. competitors</div>
+        <div class="rank-bar winner"><span class="name">ALICE Technologies</span><span class="score" style="color:var(--green)">Est. 3,500+/mo &middot; Active publishing</span></div>
+        <div class="rank-bar neutral"><span class="name">Constructable.ai</span><span class="score">453 pages &middot; Construction guides</span></div>
+        <div class="rank-bar loser"><span class="name"><strong>Bex (bexbuilds.ai)</strong></span><span class="score" style="color:var(--red)">0 content pages &middot; No blog</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <h2 class="section-title">Local SEO &amp; Online Presence</h2>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Online Presence</div>
+      <div class="big-stat danger" style="font-size:2rem">POOR</div>
+      <div class="stat-sub">Overall Semrush local assessment &mdash; 33 of 37 listings to fix</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> GBP Reviews</div>
+      <div class="big-stat danger">0</div>
+      <div class="stat-sub">No reviews on Google Business Profile &mdash; zero social proof for B2B evaluation</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> GBP Listing</div>
+      <div class="big-stat warning" style="font-size:1.6rem">Unverified</div>
+      <div class="stat-sub">510 Lockhart Dr, Austin TX 78704 &middot; (512) 202-7143</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> NAP &amp; Listing Status</div>
+      <div style="background:var(--light-gray);border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;font-size:0.82rem">
+        <div><strong>Name:</strong> Bex</div>
+        <div><strong>Address:</strong> 510 Lockhart Dr, Austin, TX 78704</div>
+        <div><strong>Phone:</strong> +1 (512) 202-7143</div>
+        <div><strong>Website:</strong> bexbuilds.ai</div>
+      </div>
+      <table>
+        <thead><tr><th>Directory</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Google Business Profile</td><td><span class="badge amber">Claimed &mdash; 0 reviews</span></td></tr>
+          <tr><td>Bing Places</td><td><span class="badge red">Needs Fix</span></td></tr>
+          <tr><td>Apple Maps</td><td><span class="badge red">Needs Fix</span></td></tr>
+          <tr><td>Yelp</td><td><span class="badge red">Needs Fix</span></td></tr>
+          <tr><td>Facebook Business</td><td><span class="badge red">Needs Fix</span></td></tr>
+          <tr><td>Crunchbase / G2 / Capterra</td><td><span class="badge red">Unlisted</span></td></tr>
+          <tr><td><strong>Total to fix:</strong></td><td><span class="badge red">33 of 37 listings</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">For a B2B SaaS selling into construction, local and directory presence matters more than it appears. Procurement teams and GCs vetting Bex will check Google, G2, Capterra, and LinkedIn before taking a demo call &mdash; and right now, most of those surfaces are either empty or inaccurate. 33 of 37 Semrush-tracked directories have incorrect or incomplete Bex data. The GBP has no reviews, which signals to any buyer who finds it that Bex either has no customers or isn&#39;t invested in its online presence. Both impressions hurt.</p>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.75rem">The fix is systematic: standardize NAP data across all 37 directories, build out the GBP with product categories and descriptions, and create a review collection workflow for existing Bex customers. For a company with strong product proof and real customer relationships, this is purely an execution gap &mdash; not a credibility one.</p>
+      <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:8px;padding:0.75rem 1rem;font-size:0.8rem">
+        <strong style="color:var(--amber)">Priority action:</strong> G2 and Capterra profiles for Bex Insurance and Bex Punch would directly intercept buyers searching "COI tracking software" and "punch list software" in software review directories &mdash; a channel no competitor has fully locked yet.
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <h2 class="section-title">How Abstrakt Closes the Gap</h2>
+  </div>
+
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">Harmonic Mean has a product, an outbound motion, and a goal. What&#39;s missing is the digital infrastructure that makes both domains credible to buyers and AI engines. Abstrakt closes that in three steps &mdash; consolidate, build, and grow.</p>
+
+  <div class="card-grid cols-3">
+    <div class="card" style="border-top:3px solid var(--coral)">
+      <div class="card-label" style="margin-bottom:0.85rem"><span class="dot navy"></span> Step 1 &mdash; Domain Consolidation &amp; Rebuild</div>
+      <p style="font-size:0.82rem;color:var(--text);margin-bottom:0.85rem">Consolidate harmonicmean.ai and bexbuilds.ai onto one scalable WordPress domain. Rebuild with proper SEO architecture so authority compounds on a single domain instead of fragmenting across two near-empty Bootstrap sites. Launch with the content infrastructure to start ranking from day one.</p>
+      <ul style="font-size:0.8rem;color:var(--text);padding-left:1.1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li>Choose primary domain (bexbuilds.ai or harmonicmean.ai) and 301-redirect the other</li>
+        <li>New WordPress site (30 pages) with SEO-optimized architecture</li>
+        <li>Product pages with keyword targeting for all 6 Bex modules</li>
+        <li>Blog and resource center for content publishing</li>
+        <li>Schema markup: SoftwareApplication + FAQ built in at page level</li>
+        <li>Fix www redirect, sitemap, and canonical URL structure</li>
+        <li>Add and optimize llms.txt on primary domain</li>
+        <li>Mobile-optimized for field crew usage</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.85rem"><span class="dot navy"></span> Step 2 &mdash; SEO Content Program</div>
+      <p style="font-size:0.82rem;color:var(--text);margin-bottom:0.85rem">Build the keyword footprint that puts Bex in front of GCs and PMs when they search "AI in construction," "construction automation," and "punch list software." ALICE Technologies and Digital Project Manager rank for these terms. Bex can, too &mdash; but needs content to compete.</p>
+      <ul style="font-size:0.8rem;color:var(--text);padding-left:1.1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li>Construction AI Hub targeting 4,120/mo in core searches</li>
+        <li>PlanGrid alternative page (22,200/mo)</li>
+        <li>Product-specific content for Punch, Walks, Liens, Insurance, Risk, Core</li>
+        <li>4 SEO content pieces per month &mdash; editorial calendar aligned to Bex buyer journey</li>
+        <li>Case study development (Cadence McShane + future clients)</li>
+        <li>Keyword research + monthly performance reporting</li>
+        <li>Authority building: backlinks from construction tech publications</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.85rem"><span class="dot navy"></span> Step 3 &mdash; Brand Authority &amp; Trust Building</div>
+      <p style="font-size:0.82rem;color:var(--text);margin-bottom:0.85rem">Every prospect Abstrakt outbound reaches will Google Harmonic Mean or Bex before responding. Right now they find near-empty sites, no reviews, and broken directories. This step makes the digital presence match the product quality &mdash; so outbound closes faster.</p>
+      <ul style="font-size:0.8rem;color:var(--text);padding-left:1.1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li>NAP standardization across 37 directories</li>
+        <li>GBP optimization &amp; review collection workflow</li>
+        <li>G2 and Capterra profiles for Bex Insurance &amp; Bex Punch</li>
+        <li>LinkedIn Company Page optimization for GC audience</li>
+        <li>AI search presence: llms.txt + schema structured for AI citation</li>
+        <li>Link building: construction industry and B2B SaaS publications</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:0.25rem;background:var(--navy);border:none">
+    <div style="display:flex;gap:2rem;align-items:center">
+      <div>
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.35rem">Outbound + Inbound = Compounding Growth</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Abstrakt&#39;s outbound team is already running for Harmonic Mean. Adding inbound digital credibility compounds every appointment &mdash; better show rates, shorter sales cycles, and warmer prospects who&#39;ve already found proof before the demo. Partners who combine both programs average a <strong style="color:rgba(255,200,100,1)">2.1&times; increase in deal size</strong> and a <strong style="color:rgba(255,200,100,1)">3.55&times; average ROI</strong>.</p>
+      </div>
+      <div style="flex-shrink:0;text-align:center">
+        <div style="font-size:2.2rem;font-weight:900;color:var(--coral)">2.1&times;</div>
+        <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.1em">Deal Size Increase</div>
+      </div>
+      <div style="flex-shrink:0;text-align:center">
+        <div style="font-size:2.2rem;font-weight:900;color:var(--aqua)">3.55&times;</div>
+        <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.1em">Average ROI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <h2 class="section-title">Recommended Solution</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1.5rem">
+
+    <div class="card" style="border:2px solid var(--coral);position:relative">
+      <div style="display:inline-block;background:var(--coral);color:white;font-size:0.65rem;font-weight:800;letter-spacing:0.1em;padding:0.2rem 0.8rem;border-radius:20px;margin-bottom:0.75rem">RECOMMENDED</div>
+      <div class="card-label" style="margin-bottom:0.5rem">Website + SEO Content Program</div>
+      <div style="font-size:2.2rem;font-weight:900;color:var(--navy);line-height:1">$2,500<span style="font-size:1rem;font-weight:500;color:var(--muted)">/month</span></div>
+      <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">13-month agreement &mdash; website build + domain consolidation amortized</div>
+      <ul style="font-size:0.82rem;color:var(--text);padding-left:1.1rem;display:flex;flex-direction:column;gap:0.4rem">
+        <li>Domain consolidation strategy + 301-redirect plan</li>
+        <li>New WordPress website (30 pages) on primary domain</li>
+        <li>SEO-optimized architecture + schema markup</li>
+        <li>4 SEO content pieces per month</li>
+        <li>Keyword research + editorial calendar</li>
+        <li>On-page optimization for all Bex product pages</li>
+        <li>Citation &amp; local presence cleanup (all 37 directories)</li>
+        <li>G2 / Capterra profile setup</li>
+        <li>Link building &amp; authority development</li>
+        <li>llms.txt optimization for AI engine visibility</li>
+        <li>Monthly performance reporting</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.5rem">Program Add-Ons</div>
+      <div style="font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:1rem">Available Enhancements</div>
+      <div style="display:flex;flex-direction:column;gap:0.6rem;font-size:0.82rem">
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.6rem 0.75rem">
+          <div style="font-weight:700;color:var(--charcoal)">Paid Media &mdash; from $1,250/mo</div>
+          <div style="color:var(--muted)">Google Ads targeting "ai in construction," "construction automation software," and construction AI comparison queries</div>
+        </div>
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.6rem 0.75rem">
+          <div style="font-weight:700;color:var(--charcoal)">Social Media Management &mdash; $500/mo</div>
+          <div style="color:var(--muted)">LinkedIn-focused content for GCs, commercial subcontractors, and construction tech audiences</div>
+        </div>
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.6rem 0.75rem">
+          <div style="font-weight:700;color:var(--charcoal)">Authority Building &mdash; $500/mo</div>
+          <div style="color:var(--muted)">Backlink acquisition from construction tech, B2B SaaS, and commercial construction publications</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1.25rem">Why This Fits Harmonic Mean &mdash; Founder Business Case</div>
+      <div style="display:flex;flex-direction:column;gap:0.85rem">
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">1. Outbound is running &mdash; the digital layer needs to match it</div>
+          <div style="font-size:0.82rem;color:var(--text)">Abstrakt is already booking appointments for Harmonic Mean. Every prospect who gets a call will check the website first. Right now they find a near-empty company domain and a product site with no reviews, no case studies, and no authority. The audit closes faster when the digital presence validates what Douglas is saying on the call.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">2. Two domains is worse than one weak domain</div>
+          <div style="font-size:0.82rem;color:var(--text)">Split brand authority means neither harmonicmean.ai nor bexbuilds.ai can build the domain strength needed to rank. Consolidating backlinks, content, and crawl equity onto one scalable domain is the prerequisite for everything else in this program.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">3. The goal is 10x customers &mdash; organic creates leverage outbound can&#39;t</div>
+          <div style="font-size:0.82rem;color:var(--text)">At a $60K average deal and 1 current customer, closing 9 more requires compounding pipeline. Outbound generates 1:1 conversations. Organic search generates conversations while Harmonic Mean sleeps &mdash; from GCs researching "AI in construction" at 11pm before a budget meeting.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--navy)">4. The content gap is winnable &mdash; competitors are early-stage too</div>
+          <div style="font-size:0.82rem;color:var(--text)">ALICE Technologies and Pelles AI are startups, not Procore or Autodesk. Digital Project Manager is a blog. None of them have Bex&#39;s depth across punch lists, lien management, COI compliance, and AI-native email workflows. The content moat is buildable from here.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="background:var(--off-white)">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1rem">12-Month Target Outcomes</div>
+      <div style="display:flex;flex-direction:column;gap:0.6rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:0.82rem;color:var(--text)">Primary domain launched (WordPress)</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">Month 3&ndash;4</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:0.82rem;color:var(--text)">Organic keyword rankings</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">100+ keywords</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:0.82rem;color:var(--text)">Monthly organic traffic</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">400+ visits/mo</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:0.82rem;color:var(--text)">Authority Score (primary domain)</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">12+ (Est.)</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:0.82rem;color:var(--text)">Directory listings corrected</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">37 of 37</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0">
+          <span style="font-size:0.82rem;color:var(--text)">G2 / Capterra profiles live</span>
+          <span style="font-size:0.9rem;font-weight:800;color:var(--green)">Month 2</span>
+        </div>
+      </div>
+      <div style="background:var(--navy);border-radius:8px;padding:0.85rem 1rem;margin-top:1rem;font-size:0.8rem;color:rgba(255,255,255,0.8);line-height:1.5">
+        One domain. One brand story. One content program that compounds every outbound appointment Abstrakt books.
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-header">
+    <div class="section-number">09</div>
+    <h2 class="section-title">Our Process</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2rem">Every Abstrakt engagement runs through four coordinated phases. Bex would enter at Research and move through all four &mdash; building a site, ranking it, and scaling the inbound pipeline it generates.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:#D4920A;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Research</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Competitor Analysis</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 1</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 2</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor 3</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:0.5rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Keyword Volume &amp; Difficulty</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Competitor Gaps</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>User Intent</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sitemap Creation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Content Roadmap</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--red);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Build</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Build</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>90-Day Timeline</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>30 Pages</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Copy &amp; Design</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>15,000 Words</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Conversion-Focused Design</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Development</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>5 QA Checks</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sales Assets</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Optional Add-On</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--navy);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Optimize</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Site Health</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Core Web Vitals</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Lead Deliverability</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Technical SEO</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Internal Linking</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Crawlability</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Indexability</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Hosting</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>99% Uptime &amp; 24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--blue);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Grow</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Content &amp; Distribution</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>4,000+ Words Monthly</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Social Distribution</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Entity Focused Content Strategy</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Local SEO Optimization</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Top 65+ Local Directories</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Name, Address, &amp; Phone Strategy</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Duplicate Listing Suppression</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Results Reporting &amp; Consultation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--navy);font-size:0.6rem;top:3px">&#9632;</span>Partner Results Portal</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">10</div>
+    <h2 class="section-title">Website Build Timeline</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2.5rem">From kickoff to go-live in 90 days &mdash; and then straight into the SEO growth phase. Here&rsquo;s exactly what happens and when.</p>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-radius:10px 10px 0 0;overflow:hidden">
+    <div style="background:var(--navy);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 1</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Creation</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.08);line-height:1">01</div>
+    </div>
+    <div style="background:#1C3D6E;padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 2</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Development</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">02</div>
+    </div>
+    <div style="background:var(--red);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.2rem">Month 3</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Launch &#10003;</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.1);line-height:1">03</div>
+    </div>
+    <div style="background:var(--navy-dark);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 4+</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Ongoing</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">04</div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border-left:1px solid var(--border);border-right:1px solid var(--border)">
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--navy)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:#1C3D6E"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#1C3D6E;flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:#1C3D6E"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--red);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--navy-dark)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--navy-dark);flex-shrink:0"></div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;overflow:hidden;background:var(--white)">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Kickoff Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap &amp; SEO keyword creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup</li>
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap edits</li>
+        </ul>
+      </div>
+      
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--muted);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted)">Progress Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--border)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup edits</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website &amp; domain access</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--off-white)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Content Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Social media accesses</li>
+          <li style="font-size:0.78rem;color:var(--text)">Profile &amp; cover photos</li>
+        </ul>
+      </div>
+      
+      <div style="margin-bottom:1rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--charcoal);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--charcoal)">AMG Executes</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--charcoal)">
+          <li style="font-size:0.78rem;color:var(--text)">Website content creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website development</li>
+          <li style="font-size:0.78rem;color:var(--text)">Internal Q&amp;A review</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Website Reveal</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">Client reviews live site</li>
+          <li style="font-size:0.78rem;color:var(--text)">Edits provided by client</li>
+          <li style="font-size:0.78rem;color:var(--text)">AMG completes final edits</li>
+        </ul>
+      </div>
+      
+      <div style="background:var(--red);border-radius:8px;padding:0.85rem 1rem;text-align:center;margin-top:0.5rem">
+        <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.15rem">End of Month 3</div>
+        <div style="font-size:1.2rem;font-weight:900;color:var(--white);letter-spacing:0.06em">&#9660; GO LIVE</div>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--off-white)">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--navy);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--navy)">Post-Launch Program</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--navy)">
+          <li style="font-size:0.78rem;color:var(--text)">3,000 words SEO content/mo</li>
+          <li style="font-size:0.78rem;color:var(--text)">Local listing optimizations</li>
+          <li style="font-size:0.78rem;color:var(--text)">Monthly results meetings</li>
+          <li style="font-size:0.78rem;color:var(--text)">Review generation program</li>
+          <li style="font-size:0.78rem;color:var(--text)">GBP optimization &amp; posts</li>
+        </ul>
+        <div style="margin-top:1rem;background:var(--green-light);border-radius:6px;padding:0.6rem 0.75rem;border-left:3px solid var(--green)">
+          <div style="font-size:0.72rem;font-weight:700;color:var(--green)">Rankings begin compounding &#8599;</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<footer style="background:var(--navy);padding:4rem 3rem;text-align:center">
+  <div style="max-width:800px;margin:0 auto">
+    
+    <div style="font-size:1.8rem;font-weight:800;color:var(--white);line-height:1.3;margin-bottom:0.75rem">
+      Construction AI buyers are actively searching for what Bex builds. Let&#39;s make sure they find Harmonic Mean first.
+    </div>
+      
+    <div style="font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:2rem">
+      One domain. One content strategy. The digital presence that makes every outbound appointment easier to close.
+    </div>
+    <a href="https://abstraktmg.com/contact" style="display:inline-block;background:var(--white);color:var(--navy);font-weight:700;font-size:0.9rem;padding:0.85rem 2.5rem;border-radius:6px;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase">Get Started &rarr; abstraktmg.com/contact</a>
+    <div style="margin:2.5rem auto 1rem">
+      <div class="amg-logo" style="width:190px;height:24px;margin:0 auto;opacity:0.6"></div>
+    </div>
+    <div style="font-size:0.75rem;color:rgba(255,255,255,0.35);letter-spacing:0.04em">
+      Prepared by Abstrakt Marketing Group &middot; July 2026 &middot; Confidential
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
